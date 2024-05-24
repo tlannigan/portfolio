@@ -45,17 +45,17 @@ export default function Polygon({ shape, page }: PolygonProps) {
     
     function getSquareClasses(): string {
         if (page === Page.Home) {
-            return 'w-40 h-40 bg-black'
+            return 'w-40 h-40 bg-[#35B2CA]'
         } else {
-            return 'w-10 h-10 bg-black'
+            return 'w-10 h-10 bg-[#35B2CA]'
         }
     }
     
     function getCircleClasses(): string {
         if (page === Page.Home) {
-            return 'w-40 h-40 rounded-full bg-black'
+            return 'w-40 h-40 rounded-full bg-[#CA35B2]'
         } else {
-            return 'w-10 h-10 rounded-full bg-black'
+            return 'w-10 h-10 rounded-full bg-[#CA35B2]'
         }
     }
     
@@ -66,7 +66,7 @@ export default function Polygon({ shape, page }: PolygonProps) {
                 height: '0',
                 borderLeft: '5.5rem solid transparent',
                 borderRight: '5.5rem solid transparent',
-                borderBottom: '10rem solid black'
+                borderBottom: '10rem solid #B2CA35'
             }
         } else {
             return {
@@ -74,16 +74,16 @@ export default function Polygon({ shape, page }: PolygonProps) {
                 height: '0',
                 borderLeft: '1.5rem solid transparent',
                 borderRight: '1.5rem solid transparent',
-                borderBottom: '2.5rem solid black'
+                borderBottom: '2.5rem solid #B2CA35'
             }
         }
     }
 
     function getCoverClasses(): string[] {
         if (page === Page.Home) {
-            return ['scale-[100]', 'duration-1000']
+            return ['text-transparent', 'scale-[100]', 'duration-1000']
         } else {
-            return ['scale-[250]', 'duration-500']
+            return ['text-transparent', 'scale-[250]', 'duration-500']
         }
     }
     
