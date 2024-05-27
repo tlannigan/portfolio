@@ -8,7 +8,7 @@ interface EducationProps {
 
 export default function Education({ name, startDate, endDate, institution, location }: EducationProps) {
     return (
-        <div className='mb-8'>
+        <div className='mt-8'>
             <div className='flex flex-wrap justify-between'>
                 <p className='font-bold'>{name}</p>
                 <p className='italic'>{startDate} - {endDate}</p>

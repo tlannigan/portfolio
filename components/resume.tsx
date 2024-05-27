@@ -3,14 +3,14 @@ import Education from './education'
 
 export default function Resume() {
     return (
-        <div className='shadow-md p-8'>
+        <div className='shadow-md p-16 mb-4'>
             <div className="mb-8">
-                <h2 className="text-center text-4xl text-[#35B2CA]">Tristan Lannigan</h2>
+                <h2 className="font-bold text-center text-4xl text-[#35B2CA]">Tristan Lannigan</h2>
                 <p className="text-center">Edmonton, Alberta - (506) 229-6535 - tristanlannigan@gmail.com</p>
                 <p className="text-center">tlannigan.com</p>
             </div>
             <div>
-                <h3 className="text-xl mb-8 text-[#35B2CA]">WORK EXPERIENCE</h3>
+                <h3 className="font-bold text-xl mb-8 text-[#35B2CA]">WORK EXPERIENCE</h3>
                 <Job
                     jobTitle="Software Developer"
                     company="Lantern"
@@ -20,14 +20,14 @@ export default function Resume() {
                     technologies={['Java', 'Kotlin', 'Android', 'TypeScript', 'C#']}
                     jobDescriptions={[
                         'Led the end-to-end development of multiple web and Android applications, enhancing user experience and functionality.',
-                        'Developed internal apps for various business functions, such as an internal company listing and an estimate generation tool.',
+                        'Developed internal apps for various business functions, such as an internal company employee listing app and an estimate generation tool.',
                         'Participated in weekly sprint planning and retrospective ceremonies, improving team collaboration and project timelines.',
                         'Enhanced legacy codebases by implementing new features, resulting in a 20% decrease in claims done over telephone and mail.',
                     ]}
                 />
                 <Job
                     jobTitle="Fullstack Developer"
-                    company="Ordr Technologies Inc."
+                    company="Ordr Technologies Inc. (Startup)"
                     startDate="Apr 2022"
                     endDate="May 2023"
                     projectDescription="Food delivery Android app"
@@ -41,14 +41,14 @@ export default function Resume() {
                 />
                 <Job
                     jobTitle="Developer"
-                    company="Five Vectors Inc."
+                    company="Five Vectors Inc. (Startup)"
                     startDate="Sep 2019"
                     endDate="Mar 2020"
                     projectDescription="Gaming industry music/audio app"
                     technologies={['JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS']}
                     jobDescriptions={[
                         'Developed frontend and backend implementations for music/audio apps in the gaming industry.',
-                        'Planned and implemented backend systems, including REST APIs and databases using AWS services, resulting in a 25% reduction in server response times.',
+                        'Planned and implemented backend systems, including REST APIs and databases using AWS services.',
                         'Introduced audio streaming capabilities, enhancing user experience.',
                         'Organized development cycles with sprint planning meetings, improving project delivery timelines.',
                     ]}
@@ -81,7 +81,7 @@ export default function Resume() {
                 />
             </div>
             <div>
-                <h3 className='text-xl mb-8 text-[#35B2CA]'>EDUCATION</h3>
+                <h3 className='font-bold text-xl mb-8 text-[#35B2CA]'>EDUCATION</h3>
                 <Education
                     name='Bachelor of Science: Computer Science'
                     startDate='Sep 2021'

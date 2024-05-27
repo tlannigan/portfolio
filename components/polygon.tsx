@@ -26,8 +26,8 @@ export default function Polygon({ shape, page }: PolygonProps) {
             const element = document.getElementById(id)
             element?.classList.add('duration-500')
             element?.classList.remove('scale-[100]')
-            await sleep(500)
-            element?.classList.remove('duration-500')
+            await sleep(600)
+            element?.classList.remove('z-10', 'duration-500')
             element?.classList.add('hover:scale-110')
         }
         if (isCovered) {
@@ -80,9 +80,9 @@ export default function Polygon({ shape, page }: PolygonProps) {
 
     function getCoverClasses(): string[] {
         if (page === Page.Home) {
-            return ['text-transparent', 'scale-[100]', 'duration-1000']
+            return ['z-10', 'text-transparent', 'scale-[100]', 'duration-1000']
         } else {
-            return ['text-transparent', 'scale-[250]', 'duration-500']
+            return ['z-10', 'text-transparent', 'scale-[250]', 'duration-500']
         }
     }
     
@@ -103,7 +103,7 @@ export default function Polygon({ shape, page }: PolygonProps) {
             className={`
                 ${shape === Shape.Square ? getSquareClasses() : ''} 
                 ${shape === Shape.Circle ? getCircleClasses() : ''} 
-                ${isCovered ? 'scale-[100]' : 'hover:scale-110'} 
+                ${isCovered ? 'z-10 scale-[100]' : 'hover:scale-110'} 
                 cursor-pointer transition-transform text-white
             `}
             style={shape === Shape.Triangle ? getTriangleStyles() : {}}
