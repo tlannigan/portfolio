@@ -6,10 +6,11 @@ import digYourselfOut from '@/public/digyourselfout.png'
 import apollo from '@/public/apollo.jpg'
 
 export default function ProjectsPage() {
+    const page = Page.Projects
     return (
         <div className="min-h-dvh mx-auto py-4 overflow-hidden">
-            <div className="xl:container !max-w-screen-md flex flex-col gap-y-8 min-h-dvh mx-auto">
-                <Navbar page={Page.Projects} />
+            <div className="xl:container !max-w-screen-md h-full flex flex-col gap-y-8 mx-auto">
+                <Navbar page={page} />
                 <div className='flex flex-col mt-8'>
                     <Project
                         src={ordr}

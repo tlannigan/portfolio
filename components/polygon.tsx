@@ -23,7 +23,6 @@ export default function Polygon({ shape, page }: PolygonProps) {
 
     useEffect(() => {
         async function uncover() {
-            console.log(id)
             const element = document.getElementById(id)
             element?.classList.add('duration-500')
             element?.classList.remove('scale-[100]')
@@ -88,11 +87,13 @@ export default function Polygon({ shape, page }: PolygonProps) {
     }
     
     const coverPage = async (e: any) => {
-        const element = document.getElementById(id)
-        element?.classList.remove('text-white', 'hover:scale-110')
-        element?.classList.add(...getCoverClasses())
-        await sleep(1000)
-        router.push(href)
+        if (!isActiveLink()) {
+            const element = document.getElementById(id)
+            element?.classList.remove('text-white', 'hover:scale-110')
+            element?.classList.add(...getCoverClasses())
+            await sleep(1000)
+            router.push(href)
+        }
     }
 
     return (
