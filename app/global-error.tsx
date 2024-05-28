@@ -11,6 +11,7 @@ export default function GlobalError({
     <html>
       <body>
         <h2>Something went wrong!</h2>
+        <p>{error.name}</p>
         <p>{error.message}</p>
         <p>{error.digest}</p>
         <p>{error.stack}</p>
