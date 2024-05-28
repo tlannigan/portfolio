@@ -3,7 +3,7 @@ import Education from './education'
 
 export default function Resume() {
     return (
-        <div className='shadow-md p-16 mb-4'>
+        <div className='sm:shadow-md p-4 sm:p-16 mb-4'>
             <div className="mb-8">
                 <h2 className="font-bold text-center text-4xl text-[#35B2CA]">Tristan Lannigan</h2>
                 <p className="text-center">Edmonton, Alberta - (506) 229-6535 - tristanlannigan@gmail.com</p>

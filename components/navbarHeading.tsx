@@ -32,5 +32,5 @@ export default function NavbarHeading({ page }: NavbarHeadingProps) {
         }
     }
 
-    return <h1 className={`${titanOne.className} text-4xl`}>{getSpan()}</h1>
+    return <h1 className={`${titanOne.className} text-lg sm:text-4xl leading-none pl-4 sm:pl-0`}>{getSpan()}</h1>
 }

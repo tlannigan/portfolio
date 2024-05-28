@@ -8,7 +8,7 @@ interface NavbarProps {
 
 export default function Navbar({ page }: NavbarProps) {
     return (
-        <div className='flex flex-row gap-x-16 justify-between'>
+        <div className='flex flex-row gap-x-4 justify-between'>
             <NavbarHeading page={page} />
             <ShapeNav page={page} />
         </div>

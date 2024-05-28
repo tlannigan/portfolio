@@ -8,7 +8,7 @@ interface ShapeNavProps {
 
 export default function ShapeNav({ page }: ShapeNavProps) {
     const pageNavClasses = () =>
-        page === Page.Home ? `justify-between w-full ${robotoMono.className}` : `gap-x-2 pr-1`
+        page === Page.Home ? `justify-center sm:justify-between w-full flex-wrap ${robotoMono.className} gap-y-4` : `gap-x-2 pr-1`
     return (
         <div className={`flex ${pageNavClasses()}`}>
             <Polygon shape={Shape.Square} page={page} />

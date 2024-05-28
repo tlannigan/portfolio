@@ -13,10 +13,10 @@ interface ProjectProps {
 
 export default function Project({ src, name, description, siteUrl = '', sourceUrl = '' }: ProjectProps) {
     return (
-        <div className="mb-16">
-            <Image src={src} className="shadow-md rounded-md max-h-[30rem] w-auto" alt="Dig Yourself Out web app" />
+        <div className="mb-8 sm:mb-16">
+            <Image src={src} className="shadow-md rounded-md max-h-[38rem] w-auto" alt="Dig Yourself Out web app" />
             <h2 className={`${robotoMono.className} text-2xl mt-6`}>{name}</h2>
-            <p className="">{description}</p>
+            <p className="mt-2">{description}</p>
             <div className="flex gap-x-4 my-4">
                 <LinkButton
                     text="Visit site"
