@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from 'next/image'
 import { robotoMono } from '@/app/fonts'
-import Link from 'next/link'
 import LinkButton from './linkButton'
 
 interface ProjectProps {

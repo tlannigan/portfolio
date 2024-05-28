@@ -5,7 +5,7 @@ import { Page } from './enums'
 export default function Home() {
     const page = Page.Home
     return (
-        <div className="min-h-dvh mx-auto overflow-hidden">
+        <div className="overflow-hidden">
             <div className="flex flex-col justify-center min-h-dvh w-min mx-auto">
                 <BigHeading />
                 <ShapeNav page={page} />
