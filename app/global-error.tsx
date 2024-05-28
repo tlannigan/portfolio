@@ -11,10 +11,11 @@ export default function GlobalError({
     <html>
       <body>
         <h2>Something went wrong!</h2>
-        <p>{error.name}</p>
-        <p>{error.message}</p>
-        <p>{error.digest}</p>
-        <p>{error.stack}</p>
+        <p className='mb-4'>{error.name}</p>
+        <p className='mb-4'>{error.message}</p>
+        <p className='mb-4'>{error.digest}</p>
+        <p className='mb-4'>{error.stack}</p>
+        <p className='mb-4'>{error.cause?.toString()}</p>
       </body>
     </html>
   )
