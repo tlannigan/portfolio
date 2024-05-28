@@ -25,10 +25,10 @@ export default function AboutPage() {
                         </div>
                         <div className='flex gap-x-4'>
                             <Link href="https://github.com/tlannigan">
-                                <GitHub fontSize="large" />
+                                <GitHub fontSize="large" className='hover:scale-110' />
                             </Link>
                             <Link href="https://www.linkedin.com/in/tristanlannigan/">
-                                <LinkedIn fontSize="large" />
+                                <LinkedIn fontSize="large" className='hover:scale-110' />
                             </Link>
                         </div>
                     </div>
