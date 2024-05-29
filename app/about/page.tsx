@@ -13,7 +13,7 @@ export default function AboutPage() {
                 <Navbar page={page} />
                 <div className='flex flex-wrap p-4 sm:p-0 gap-y-4'>
                     <div className='sm:basis-1/2'>
-                        <Image src={me} className='rounded-md shrink' alt="Tristan Lannigan" />
+                        <Image src={me} placeholder="blur" priority={true} className='rounded-md shrink' alt="Tristan Lannigan" />
                     </div>
                     <div className='sm:basis-1/2 p-2 sm:px-8 flex flex-col justify-between'>
                         <div>
