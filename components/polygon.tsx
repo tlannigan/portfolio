@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 interface PolygonProps {
     shape: Shape
     page: Page
+    tabIndex: number
 }
 
 interface NavItemInfo {
@@ -81,7 +82,7 @@ export default function Polygon({ shape, page }: PolygonProps) {
     }
 
     return (
-        <div
+        <button
             id={id}
             onClick={coverPage}
             className={`
@@ -93,7 +94,7 @@ export default function Polygon({ shape, page }: PolygonProps) {
             `}
         >
             {getHeading(shape, page)}
-        </div>
+        </button>
     )
 }
 

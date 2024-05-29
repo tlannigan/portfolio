@@ -27,7 +27,7 @@ export default function Project({ src, name, description, siteUrl = '', sourceUr
                 <LinkButton
                     text="Repository"
                     disabledText="Private repository"
-                    href={siteUrl}
+                    href={sourceUrl}
                     isDisabled={sourceUrl === ''}
                 />
             </div>
