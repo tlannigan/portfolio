@@ -1,7 +1,7 @@
 import Navbar from '@/components/navbar'
 import { Page } from '../enums'
 import Image from 'next/image'
-import me from '@/public/tristanlannigan.jpg'
+import me from '@/public/tristanlannigan.png'
 import Link from 'next/link'
 import { GitHub, LinkedIn } from '@mui/icons-material'
 
