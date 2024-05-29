@@ -119,14 +119,14 @@ function getNavItemInfo(shape: Shape): NavItemInfo {
 
 function getHeading(shape: Shape, page: Page) {
     if (page === Page.Home) {
-        const commonClasses = 'text-xs sm:text-lg text-center pt-20 sm:pt-24'
+        const commonClasses = 'text-xs sm:text-lg text-center'
         switch (shape) {
             case Shape.Square:
-                return <p className={commonClasses}>Resume</p>
+                return <p className={`${commonClasses} pt-12 sm:pt-14`}>Resume</p>
             case Shape.Triangle:
-                return <p className={`${commonClasses} ml-[-1.8rem] sm:ml-[-2.6rem]`}>Projects</p>
+                return <p className={`${commonClasses} ml-[-1.8rem] sm:ml-[-2.6rem] pt-20 sm:pt-24`}>Projects</p>
             case Shape.Circle:
-                return <p className={commonClasses}>About</p>
+                return <p className={`${commonClasses} pt-12 sm:pt-14`}>About</p>
         }
     } else {
         return <></>
