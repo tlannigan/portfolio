@@ -16,13 +16,13 @@ export default function Resume() {
                     company="Lantern"
                     startDate="May 2023"
                     endDate="Present"
-                    projectDescription="Insurance Online Claims (ASEBP) - Client-led project"
+                    projectDescription="Insurance Android app - Client-led project"
                     technologies={['Java', 'Kotlin', 'Android', 'TypeScript', 'C#']}
                     jobDescriptions={[
                         'Led the end-to-end development of multiple web and Android applications, enhancing user experience and functionality.',
                         'Developed internal apps for various business functions, such as an internal company employee listing app and an estimate generation tool.',
                         'Participated in weekly sprint planning and retrospective ceremonies, improving team collaboration and project timelines.',
-                        'Enhanced legacy codebases by implementing new features, resulting in a 20% decrease in claims done over telephone and mail.',
+                        'Enhanced legacy codebases by implementing new features, resulting in a decrease in claims done over telephone and mail.',
                     ]}
                 />
                 <Job
@@ -75,6 +75,7 @@ export default function Resume() {
                     technologies={['VoIP', 'Wireless Access Points', 'Windows Server', 'Google Apps Script']}
                     jobDescriptions={[
                         'Ensured high availability for both user machines and on-site servers for 20 users across two sites, handling updates, backups, group policies, and website maintenance.',
+                        'Developed scripts for various Google apps, resulting in faster report generation and increased employee productivity.',
                         'Provided technical support for VoIP configurations and wireless access points, enhancing communication efficiency.',
                         'Improved operational security by implementing MFA, SSO, and password vaults, improving user productivity.'
                     ]}
