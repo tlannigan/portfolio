@@ -12,19 +12,19 @@ export default function NavbarHeading({ page }: NavbarHeadingProps) {
             case Page.Resume:
                 return (
                     <span>
-                        <Link href="/" className="hover:underline">Tristan Lannigan</Link>&apos;s <span className="text-[#35B2CA]">resume</span>
+                        <Link href="/" className="hover:underline decoration-4">Tristan Lannigan</Link>&apos;s <span className="text-[#35B2CA]">resume</span>
                     </span>
                 )
             case Page.Projects:
                 return (
                     <span>
-                        <Link href="/" className="hover:underline">Tristan Lannigan</Link>&apos;s <span className="text-[#B2CA35]">projects</span>
+                        <Link href="/" className="hover:underline decoration-4">Tristan Lannigan</Link>&apos;s <span className="text-[#B2CA35]">projects</span>
                     </span>
                 )
             case Page.About:
                 return (
                     <span>
-                        <span className="text-[#CA35B2]">About</span> <Link href="/" className="hover:underline">Tristan Lannigan</Link>
+                        <span className="text-[#CA35B2]">About</span> <Link href="/" className="hover:underline decoration-4">Tristan Lannigan</Link>
                     </span>
                 )
             default:

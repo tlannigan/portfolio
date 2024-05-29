@@ -28,7 +28,7 @@ export default function Polygon({ shape, page }: PolygonProps) {
             element?.classList.remove('scale-[100]')
             await sleep(600)
             element?.classList.remove('z-10', 'duration-500')
-            element?.classList.add('hover:scale-110')
+            element?.classList.add('hover:scale-110', 'focus:scale-110')
         }
         if (isCovered) {
             uncover()
@@ -44,37 +44,21 @@ export default function Polygon({ shape, page }: PolygonProps) {
     
     function getSquareClasses(): string {
         if (page === Page.Home) {
-            return 'w-40 h-40 bg-[#35B2CA]'
+            return 'w-32 h-32 sm:w-40 sm:h-40 bg-[#35B2CA] '
         } else {
-            return 'w-10 h-10 bg-[#35B2CA]'
+            return 'w-10 h-10 bg-[#35B2CA] '
         }
+    }
+    
+    function getTriangleClasses() {
+        return page === Page.Home ? 'home-triangle ' : 'nav-triangle '
     }
     
     function getCircleClasses(): string {
         if (page === Page.Home) {
-            return 'w-40 h-40 rounded-full bg-[#CA35B2]'
+            return 'w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-[#CA35B2] '
         } else {
-            return 'w-10 h-10 rounded-full bg-[#CA35B2]'
-        }
-    }
-    
-    function getTriangleStyles() {
-        if (page === Page.Home) {
-            return {
-                width: '0',
-                height: '0',
-                borderLeft: '5.5rem solid transparent',
-                borderRight: '5.5rem solid transparent',
-                borderBottom: '10rem solid #B2CA35'
-            }
-        } else {
-            return {
-                width: '0',
-                height: '0',
-                borderLeft: '1.5rem solid transparent',
-                borderRight: '1.5rem solid transparent',
-                borderBottom: '2.5rem solid #B2CA35'
-            }
+            return 'w-10 h-10 rounded-full bg-[#CA35B2] '
         }
     }
 
@@ -89,7 +73,7 @@ export default function Polygon({ shape, page }: PolygonProps) {
     const coverPage = async (e: any) => {
         if (!isActiveLink()) {
             const element = document.getElementById(id)
-            element?.classList.remove('text-white', 'hover:scale-110')
+            element?.classList.remove('text-white', 'hover:scale-110', 'focus:scale-110')
             element?.classList.add(...getCoverClasses())
             await sleep(1000)
             router.push(href)
@@ -101,12 +85,12 @@ export default function Polygon({ shape, page }: PolygonProps) {
             id={id}
             onClick={coverPage}
             className={`
-                ${shape === Shape.Square ? getSquareClasses() : ''} 
-                ${shape === Shape.Circle ? getCircleClasses() : ''} 
-                ${isCovered ? 'z-10 scale-[100]' : 'hover:scale-110'} 
+                ${shape === Shape.Square ? getSquareClasses() : ''}
+                ${shape === Shape.Triangle ? getTriangleClasses() : ''}
+                ${shape === Shape.Circle ? getCircleClasses() : ''}
+                ${isCovered ? 'z-10 scale-[100]' : 'hover:scale-110 focus:scale-110'} 
                 cursor-pointer transition-transform text-white
             `}
-            style={shape === Shape.Triangle ? getTriangleStyles() : {}}
         >
             {getHeading(shape, page)}
         </div>
@@ -135,13 +119,14 @@ function getNavItemInfo(shape: Shape): NavItemInfo {
 
 function getHeading(shape: Shape, page: Page) {
     if (page === Page.Home) {
+        const commonClasses = 'text-xs sm:text-lg text-center pt-20 sm:pt-24'
         switch (shape) {
             case Shape.Square:
-                return <p className="text-center pt-24">Resume</p>
+                return <p className={commonClasses}>Resume</p>
             case Shape.Triangle:
-                return <p className='text-center ml-[-2.4rem] pt-24'>Projects</p>
+                return <p className={`${commonClasses} ml-[-1.8rem] sm:ml-[-2.6rem]`}>Projects</p>
             case Shape.Circle:
-                return <p className='text-center pt-24'>About</p>
+                return <p className={commonClasses}>About</p>
         }
     } else {
         return <></>
