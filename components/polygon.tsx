@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react'
 interface PolygonProps {
     shape: Shape
     page: Page
-    tabIndex: number
 }
 
 interface NavItemInfo {
