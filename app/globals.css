@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.home-triangle {
+    width: 0;
+    height: 0;
+    border-left: 5.5rem solid transparent;
+    border-right: 5.5rem solid transparent;
+    border-bottom: 10rem solid #B2CA35;
+}
+
+.nav-triangle {
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-bottom: 2.5rem solid #B2CA35;
+}
+
+@media screen and (max-width: 639px) {
+    .home-triangle {
+        width: 0;
+        height: 0;
+        border-left: 4rem solid transparent;
+        border-right: 4rem solid transparent;
+        border-bottom: 8rem solid #B2CA35;
+    }
+}
