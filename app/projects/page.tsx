@@ -22,16 +22,16 @@ export default function ProjectsPage() {
                         siteUrl='https://play.google.com/store/apps/details?id=com.ordr.app' />
                     <Project
                         src={digYourselfOut}
-                        imgHeight={768}
-                        imgWidth={430}
+                        imgHeight={430}
+                        imgWidth={768}
                         name='Dig Yourself Out'
                         description='Log parsing tool for modded Minecraft. Finds common issues in log files and displays them for users.'
                         siteUrl='https://digyourselfout.app'
                         sourceUrl='https://github.com/tlannigan/dig-yourself-out' />
                     <Project
                         src={apollo}
-                        imgHeight={768}
-                        imgWidth={586}
+                        imgHeight={586}
+                        imgWidth={768}
                         name='Apollo Overwolf App'
                         description='Gaming app centered around providing new and unique audio experiences in games that don&apos;t already provide them, enhancing player experiences. Learns user preferences over time to recommend the best music in the moment.'
                         siteUrl='https://www.overwolf.com/app/players_republik-apollo' />
