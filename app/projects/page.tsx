@@ -15,30 +15,23 @@ export default function ProjectsPage() {
                 <div className='flex flex-col mt-8 p-4 sm:p-0'>
                     <Project
                         src={ordr}
-                        imgHeight={436}
-                        imgWidth={768}
                         name="Ordr Android App"
                         description="Food delivery app for sports stadiums, with integrated delivery service and third-party point-of-sale and inventory integrations."
-                        siteUrl='https://play.google.com/store/apps/details?id=com.ordr.app' />
+                        siteUrl='https://play.google.com/store/apps/details?id=com.ordr.app'
+                        priority={true} />
                     <Project
                         src={digYourselfOut}
-                        imgHeight={430}
-                        imgWidth={768}
                         name='Dig Yourself Out'
                         description='Log parsing tool for modded Minecraft. Finds common issues in log files and displays them for users.'
                         siteUrl='https://digyourselfout.app'
                         sourceUrl='https://github.com/tlannigan/dig-yourself-out' />
                     <Project
                         src={apollo}
-                        imgHeight={586}
-                        imgWidth={768}
                         name='Apollo Overwolf App'
                         description='Gaming app centered around providing new and unique audio experiences in games that don&apos;t already provide them, enhancing player experiences. Learns user preferences over time to recommend the best music in the moment.'
                         siteUrl='https://www.overwolf.com/app/players_republik-apollo' />
                     <Project
                         src={colourSmashing}
-                        imgHeight={1079}
-                        imgWidth={575}
                         name='Colour Smashing'
                         description='Simple colour matching game I made to relieve my girlfriend of boredom.'
                         siteUrl='https://tlannigan.github.io/colour-smashing'

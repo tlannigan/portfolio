@@ -4,18 +4,17 @@ import LinkButton from './linkButton'
 
 interface ProjectProps {
     src: StaticImageData
-    imgHeight: number
-    imgWidth: number
     name: string
     description: string
     siteUrl?: string
     sourceUrl?: string
+    priority?: boolean
 }
 
-export default function Project({ src, imgHeight, imgWidth, name, description, siteUrl = '', sourceUrl = '' }: ProjectProps) {
+export default function Project({ src, name, description, siteUrl = '', sourceUrl = '', priority = false }: ProjectProps) {
     return (
         <div className="mb-8 sm:mb-16">
-            <Image src={src} height={imgHeight} width={imgWidth} className="shadow-md rounded-md max-h-[38rem] w-auto" alt="Dig Yourself Out web app" />
+            <Image src={src} className="shadow-md rounded-md max-h-[38rem] w-auto" placeholder='blur' priority={priority} alt={name} />
             <h2 className={`${robotoMono.className} text-2xl mt-6`}>{name}</h2>
             <p className="mt-2">{description}</p>
             <div className="flex gap-x-4 my-4">
