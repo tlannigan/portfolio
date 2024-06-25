@@ -20,7 +20,6 @@ export default function AboutPage() {
                             <h2 className='text-2xl'>Tristan Lannigan</h2>
                             <h3 className='text-lg mb-4'>Software Developer</h3>
                             <p className='pb-4'>Hi, I&apos;m Tristan. I develop websites and apps that make people say, &quot;Wow, that&apos;s pretty nifty!&quot; I find joy in creating UI that provides users with feedback, from small jitters to clean animations.</p>
-                            <p className='pb-4'>During the workday I get my dopamine from solving real problems that users run into and watching the number of user stories dwindle.</p>
                             <p className='pb-4'>On my days off you can find me playing video games, going for scenic drives, identifying mushrooms in the forest, or starting a new side project that is definitely going to be finished.</p>
                         </div>
                         <div className='flex gap-x-4'>
